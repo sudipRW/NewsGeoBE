@@ -1,0 +1,9 @@
+const mongoose = require('mongoose');
+
+const googleSigninSchema = new mongoose.Schema({
+    
+    email: String,
+    });
+
+const GoogleSignin = mongoose.model('googlesigins', googleSigninSchema);
+module.exports = GoogleSignin;
